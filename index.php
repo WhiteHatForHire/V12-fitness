@@ -6,6 +6,9 @@
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
+ * 
+ * MAX NOTE: when coming back in, just remove the container and cols from the index and single pages
+ * also modify the header and footer as needed, and add a nav that can work as they want it.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -15,7 +18,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area col-md-8">
 		<main id="main" class="site-main">
 
 		<?php
@@ -54,6 +57,7 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-get_sidebar();
-get_footer();
+<div class="col-md-4">
+	<?php get_sidebar(); ?>
+</div>
+<?php get_footer(); 

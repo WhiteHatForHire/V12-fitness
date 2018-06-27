@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function v12_fitness_widgets_init() {
+function v12fitness_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Right Sidebar', 'v12-fitness' ),
 		'id'            => 'right-sidebar',
@@ -16,4 +16,4 @@ function v12_fitness_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'v12_fitness_widgets_init' );
+add_action( 'widgets_init', 'v12fitness_widgets_init' );

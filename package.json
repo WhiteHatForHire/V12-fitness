@@ -1,0 +1,23 @@
+{
+  "name": "v12-fitness",
+  "version": "1.0.0",
+  "description": "Custom Theme for V12",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhiteHatForHire/V12-fitness.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WhiteHatForHire/V12-fitness/issues"
+  },
+  "homepage": "https://github.com/WhiteHatForHire/V12-fitness#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
