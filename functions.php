@@ -45,6 +45,8 @@ if ( ! function_exists( 'v12_fitness_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'v12-fitness' ),
+			'mobile' => esc_html__( 'Mobile', 'v12-fitness' ),
+			'left-side' => esc_html__( 'Left-Side', 'v12-fitness' ),
 		) );
 
 		/*

@@ -22,7 +22,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
+# Pages
 # Typography
 # Elements
 # Forms
@@ -42,8 +42,65 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Normalize
+# Pages
 --------------------------------------------------------------*/
+.home-page {
+  background-color: black; }
+
+.home-landing {
+  display: flex;
+  justify-content: center;
+  height: 100vh; }
+  .home-landing #ripped-guy-landing {
+    height: 100%;
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5); }
+  .home-landing #landing-v {
+    font-family: 'Neoteric'; }
+  .home-landing .landing-text {
+    font-family: 'trench';
+    font-size: 350px; }
+
+#landing-fitness-text {
+  position: absolute;
+  top: 70%;
+  color: red;
+  font-family: 'trench';
+  font-size: 100px;
+  letter-spacing: 7rem;
+  left: 55%;
+  transform: translateX(-50%); }
+
+@media (max-width: 1200px) {
+  .home-landing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/wp-content/themes/v12-fitness/src/img/v12-4.jpg");
+    background-size: cover;
+    background-position: top; }
+    .home-landing #ripped-guy-landing {
+      display: none; }
+    .home-landing .landing-text {
+      color: white;
+      font-size: 300px; }
+    .home-landing #landing-v {
+      margin-right: 80px;
+      margin-top: -10px; }
+  #landing-fitness-text {
+    letter-spacing: 3rem; } }
+
+@media (max-width: 768px) {
+  .home-landing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/wp-content/themes/v12-fitness/src/img/v12-4.jpg");
+    background-size: cover; }
+    .home-landing #ripped-guy-landing {
+      display: none; }
+    .home-landing #landing-v {
+      margin-top: -10px;
+      margin-right: 20px; }
+  #landing-fitness-text {
+    letter-spacing: 2rem;
+    top: 50%;
+    font-size: 60px; } }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -100,6 +157,20 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+@font-face {
+  font-family: 'Trench';
+  src: url("./fonts/custom/trench.eot");
+  /* IE9 Compat Modes */
+  src: url("./fonts/custom/trench.woff") format("woff"), url("./fonts/custom/trench.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: 'Neoteric';
+  src: url("./fonts/custom/Neoteric.eot");
+  /* IE9 Compat Modes */
+  src: url("./fonts/custom/Neoteric.woff") format("woff"), url("./fonts/custom/Neoteric.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
 /*--------------------------------------------------------------
 # Elements
@@ -311,6 +382,28 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.static-side-nav {
+  z-index: 10000;
+  font-size: 30px;
+  font-family: 'trench';
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0; }
+  .static-side-nav #menu-left-side {
+    margin-left: 0; }
+    .static-side-nav #menu-left-side li {
+      list-style: none; }
+      .static-side-nav #menu-left-side li a {
+        color: red;
+        text-decoration: none; }
+
+@media (max-width: 768px) {
+  .static-side-nav {
+    top: 30%; }
+    .static-side-nav #menu-left-side li a {
+      color: yellow; } }
 
 /*--------------------------------------------------------------
 # Accessibility

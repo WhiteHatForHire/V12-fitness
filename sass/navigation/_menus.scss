@@ -105,3 +105,45 @@
 		width: 50%;
 	}
 }
+
+// SIDE NAV
+
+.static-side-nav {
+	z-index: 10000;
+	font-size: 30px;
+	font-family: 'trench';
+	// background-color: black;
+
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	
+	#menu-left-side {
+		margin-left: 0;
+		li {
+			a {
+				color: red;
+				text-decoration: none;
+			}
+			list-style: none;
+		}
+	}
+}
+
+// =========== MEDIA QUERIES ===================
+@media (max-width: 768px) {
+    .static-side-nav {
+    	top: 30%;
+    	#menu-left-side {
+    		li {
+    			
+    		}
+    		li a {
+    			color: yellow;
+    		}
+
+    	}
+
+    }
+}

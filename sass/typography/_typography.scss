@@ -13,3 +13,20 @@ textarea {
 @import "headings";
 
 @import "copy";
+
+
+// CUSTOM FONTS
+
+
+@font-face {
+    font-family: 'Trench';
+    src: url('./fonts/custom/trench.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/custom/trench.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/custom/trench.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Neoteric';
+    src: url('./fonts/custom/Neoteric.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/custom/Neoteric.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/custom/Neoteric.ttf')  format('truetype'); /* Safari, Android, iOS */
+}

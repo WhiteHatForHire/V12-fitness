@@ -23,7 +23,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
+# Pages
 # Typography
 # Elements
 # Forms
@@ -46,9 +46,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
-# Normalize
+# Pages
 --------------------------------------------------------------*/
-// @import "normalize";
+@import "pages/home";
 
 /*--------------------------------------------------------------
 # Typography

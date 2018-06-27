@@ -1,0 +1,82 @@
+.home-page {
+    background-color: black;
+}
+
+.home-landing {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+    #ripped-guy-landing {
+        height: 100%;
+        filter: brightness(0.5);
+        -webkit-filter: brightness(0.5);
+    }
+    
+    #landing-v {
+        font-family: 'Neoteric';
+    }
+    
+    .landing-text {
+        font-family: 'trench';
+        font-size: 350px;
+    }
+}
+
+ #landing-fitness-text {
+    position: absolute;
+    top: 70%;
+    color: red;
+    font-family: 'trench';
+    font-size: 100px;
+    letter-spacing: 7rem;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1200px) {
+    .home-landing {
+         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/wp-content/themes/v12-fitness/src/img/v12-4.jpg");
+       background-size: cover;
+       background-position: top;
+        #ripped-guy-landing {
+            // height: 50%;
+            // margin-top: 7%;
+            display: none;
+        }
+        .landing-text {
+            color: white;
+            font-size: 300px;
+        }
+        #landing-v {
+           margin-right: 80px;
+           margin-top: -10px;
+       }
+    }
+    
+    #landing-fitness-text {
+            letter-spacing: 3rem;
+        }
+}
+
+
+@media (max-width: 768px) {
+   .home-landing {
+       background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/wp-content/themes/v12-fitness/src/img/v12-4.jpg");
+       background-size: cover;
+       
+       #ripped-guy-landing {
+           display: none;
+       }
+       #landing-v {
+           margin-top: -10px;
+           margin-right: 20px;
+       }
+   }
+   #landing-fitness-text {
+        letter-spacing: 2rem;
+        top: 50%;
+        font-size: 60px;
+    }
+}
+
